@@ -1,11 +1,12 @@
 def int_to_roman(num):
-    print("test")
+    value=""
+    listone=[1,4,5,9,10,40,50,90,100,400,500,900,1000]
+    listtwo=["I","IV","V","IX","X","XL","L","XC","C","CD","D","CM","M"]
+    listone.reverse()
+    listtwo.reverse()
+    for i in range(13):
+        current=num//listone[i]
+        value+=listtwo[i]*current
+        num=num%listone[i]
+    print(value)
 
-
-
-    """
-    Convert an integer to a Roman numeral.
-
-    :param num: Integer value between 1 and 3999 inclusive.
-    :return: A string representing the Roman numeral of the integer.
-    """
