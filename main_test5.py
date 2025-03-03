@@ -1,5 +1,5 @@
 import pytest
-from main.py import int_to_roman
+from main import int_to_roman
 
 # do not change this file
 
